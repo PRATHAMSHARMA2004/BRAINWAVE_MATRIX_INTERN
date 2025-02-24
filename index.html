@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="flex justify-between items-center p-6 bg-gray-800 shadow-lg fixed w-full">
+        <h1 class="text-2xl font-bold">THE BUSINESS STOP</h1>
+        <nav>
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#" class="hover:text-gray-400">About</a></li>
+                <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-5xl font-extrabold mb-4">Welcome to your onestop business website</h2>
+        <p class="text-lg text-gray-400 mb-6">Innovative solutions for modern businesses.</p>
+        <button id="getStartedBtn" class="bg-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 transition">Get Started</button>
+    </section>
+    
+    <section class="p-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="feature-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+            <h3 class="text-xl font-semibold">Personalized Dashboard </h3>
+            <p class="text-gray-400 mt-2">A user-friendly dashboard where customers can track their orders, invoices, and service progress.</p>
+        </div>
+        <div class="feature-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+            <h3 class="text-xl font-semibold">AI-Driven Personalized Recommendations</h3>
+            <p class="text-gray-400 mt-2">Use AI to suggest the best services based on a customer’s browsing history and needs.</p>
+        </div>
+        <div class="feature-card bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+            <h3 class="text-xl font-semibold">Customer Reviews</h3>
+            <p class="text-gray-400 mt-2">Allow customers to submit text and video testimonials to build credibility.
+
+                .</p>
+        </div>
+    </section>
+    
+    <footer class="p-6 bg-gray-800 text-center">
+        <p>&copy; 2025 THE BUSINESS STOP . All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("getStartedBtn").addEventListener("click", function() {
+            alert("Welcome to our website!");
+        });
+    </script>
+</body>
+</html>
